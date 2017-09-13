@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004F9F839980A74F30A0B3EDA2EEA33991" Name="RedirectStatus" Group="Custom Content Types" Description="A redirect status item associates a redirect page with it's status." Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{30002b5f-cd22-4c4a-8317-8a4e2e6c4b4f}" DisplayName="Redirect Page Url" Name="RedirectPage" Required="TRUE" />
+      <FieldRef ID="{139e3222-6fbc-417e-a9a2-af15fe66ca02}" DisplayName="Redirect Status" Name="RedirectServiceManagerRedirectStatus" Required="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
