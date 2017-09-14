@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="RedirectStatus" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/RedirectStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="RedirectPolicyList" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/RedirectPolicyList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentTypeRef ID="0x01004F9F839980A74F30A0B3EDA2EEA33991"/>
+      <ContentTypeRef ID="0x0100FC4EC9A8ED654862B32AD0873F6C03EF"/>
     </ContentTypes>
     <Fields>
     </Fields>
     <Views>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
-        <XslLink Default="TRUE">main.xsl</XslLink>
-        <JSLink>clienttemplates.js</JSLink>
+        <XslLink>main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <Toolbar Type="Standard" />
         <ViewFields>
-          <FieldRef Name="RedirectServiceManagerTargetUrl"></FieldRef>
-          <FieldRef Name="RedirectServiceManagerRedirectStatus"></FieldRef>
+          <FieldRef Name="RedirectPage"></FieldRef>
+          <FieldRef Name="Availabilty"></FieldRef>
+          <FieldRef Name="TargetUrl"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>
-            <FieldRef Name="RedirectServiceManagerTargetUrl" />
+            <FieldRef Name="RedirectPage" />
           </OrderBy>
         </Query>
       </View>

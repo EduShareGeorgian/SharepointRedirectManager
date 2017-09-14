@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Field
-    Group="Redirect Service Manager Columns"
-    ID="{30002b5f-cd22-4c4a-8317-8a4e2e6c4b4f}"
-    Name="RedirectServiceManagerTargetUrl"
-    DisplayName="Target Url"
     Type="Hyperlink or Picture"
+    Group="Redirect Manager Columns"
+    ID="{30002b5f-cd22-4c4a-8317-8a4e2e6c4b4f}"
+    Name="RedirectManagerTargetUrl"
+    DisplayName="Target Url"
+    Description="The url of the target resource"
     Required="TRUE" >
   </Field>
   <Field
-    Group="Redirect Service Manager Columns"
-    ID="{139e3222-6fbc-417e-a9a2-af15fe66ca02}"
-    Name="RedirectServiceManagerAvailability"
-    DisplayName="Availability"
-    Description=""
     Type="Choice"
+    Group="Redirect Manager Columns"
+    ID="{139e3222-6fbc-417e-a9a2-af15fe66ca02}"
+    Name="RedirectManagerAvailability"
+    DisplayName="Availability"
+    Description="Indicates the state of availability of a resource"
     Required="TRUE"
     EnforceUniqueValues="FALSE"
     Indexed="FALSE"
@@ -27,16 +28,38 @@
       <CHOICE>unavailable</CHOICE>
     </CHOICES>
   </Field>
+<!-- Production https://georgiancollege.sharepoint.com/go/_layouts/15/listedit.aspx?List=6aa39608-9443-4976-83be-91b6c31d3fbc
   <Field
-    Group="Redirect Service Manager Columns"
-    ID="{e49e6631-f9a3-4984-ad9a-dab46ec52015}"
-    Type="LookupMulti"
-    Name="PageReference"
-    DisplayName="Page Reference"
-    StaticName="PageReference"
+    Type="Lookup"
+    List="{6aa39608-9443-4976-83be-91b6c31d3fbc}"
+    Group="Redirect Manager Columns"
+    ID="{3bd8a11e-e19d-4538-8d93-6e9098307201}"
+    Name="PageLookup"
+    DisplayName="Page Lookup"
+    StaticName="PageLookup"
+    Description="A page lookup field.  Aids the selection of pages that exist."
     Required="FALSE"
     EnforceUniqueValues="FALSE"
-    List="{c5fc9569-cc60-4175-bc7b-ce632043be16}"
+    ShowField="Title"
+    Mult="TRUE"
+    Sortable="FALSE"
+    UnlimitedLengthInDocumentLibrary="FALSE"
+    Version="1">
+  </Field>
+-->
+  <!-- thiles https://thiles.sharepoint.com/sites/go/_layouts/15/listedit.aspx?List=3bd8a11e-e19d-4538-8d93-6e9098307201 
+  -->
+  <Field
+    Type="Lookup"
+    List="{3bd8a11e-e19d-4538-8d93-6e9098307201}"
+    Group="Redirect Manager Columns"
+    ID="{3bd8a11e-e19d-4538-8d93-6e9098307201}"
+    Name="PageLookup"
+    DisplayName="Page Lookup"
+    StaticName="PageLookup"
+    Description="A page lookup field.  Aids the selection of pages that exist."
+    Required="FALSE"
+    EnforceUniqueValues="FALSE"
     ShowField="Title"
     Mult="TRUE"
     Sortable="FALSE"

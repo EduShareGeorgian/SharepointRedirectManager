@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100FC4EC9A8ED654862B32AD0873F6C03EF" Name="RedirectPolicy" Group="$Resources:core,List_Content_Types;" Description="The redirect policy governs the target redirect resource for a given redirect page and status.   The status of the page is managed through the RedirectStatus items.&#xD;&#xA;&#xD;&#xA;" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{3bd8a11e-e19d-4538-8d93-6e9098307201}" DisplayName="Redirect Page" Name="RedirectPage" Required="TRUE" />
+      <FieldRef ID="{139e3222-6fbc-417e-a9a2-af15fe66ca02}" DisplayName="Availability" Name="Availability" Required="TRUE" />
+      <FieldRef ID="{30002b5f-cd22-4c4a-8317-8a4e2e6c4b4f}" DisplayName="Target Url" Name="TargetUrl" Required="TRUE"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

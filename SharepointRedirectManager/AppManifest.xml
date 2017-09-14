@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
-     Name="SharePointRedirectManager"
+     Name="SharepointRedirectManager"
      ProductID="{59d955c1-a659-47e9-93a4-437461644f81}"
      Version="1.0.0.0"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>SharepointRedirectManager</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Pages/RedirectManager.aspx?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>
